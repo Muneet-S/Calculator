@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+}
+
+#head {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+p {
+  overflow: auto;
+}
+
+h2 {
+  padding: 10px;
+}
+
+.red {
+  background-color: rgb(201, 69, 69);
+  color: white;
+}
+
+.white {
+  background-color: white;
+}
+#app {
+  background-color: lightgrey;
+  padding: 20px;
+  border-radius: 5px;
+}
+.calculator-screen {
+  font-size: 4.5rem;
+  height: 85px;
+  border: none;
+  background-color: #f5f5f5;
+  color: rgb(11, 92, 214);
+  text-align: right;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "one two three four"
+    "five six seven eight"
+    "nine ten eleven twelve"
+    "thrtin frtin fiftin sixtin"
+    "svntin svntin etin nintin";
+  gap: 2px;
+}
+.button {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.white:hover {
+  background-color: yellow;
+  box-shadow: 1px 1px 10px black;
+}
+.red:hover {
+  background-color: rgb(22, 223, 196);
+  box-shadow: 1px 1px 10px black;
+}
+.svntin {
+  grid-column-start: -5;
+  grid-column-end: -3;
+}
